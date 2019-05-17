@@ -26,7 +26,7 @@ export class BeverageComponent implements OnInit {
     const beverageID = beverage.id;
     const resp = await this.beverageService.updateBeverage(beverageID, beverage);
     if (resp) {
-      this.router.navigate(['books']);
+      this.router.navigate(['beverages']);
     }
   }
 
